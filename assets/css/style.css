@@ -1,0 +1,65 @@
+.gameboard {
+  background-color: rgb(145, 84, 84);
+  border: solid 5px rgb(150, 78, 78);
+  box-shadow: rgb(150, 78, 78) inset 10px 10px 20px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.bille,
+.solution {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.formulaire {
+  width: 60px;
+}
+
+.solution {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.color0 {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.color1 {
+  background-color: #000000;
+  color: white;
+}
+
+.color2 {
+  background-color: #0077ff;
+}
+
+.color3 {
+  background-color: #b61818;
+}
+
+.color4 {
+  background-color: #ffe600;
+}
+
+.color5 {
+  background-color: #5ef15e;
+}

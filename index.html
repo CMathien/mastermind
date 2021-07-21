@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Mastermind</title>
+  </head>
+  <body>
+    <header class="text-center m-1 px-5">
+      <h1>Mastermind</h1>
+      <p class="lead">
+        Vous devez deviner la combinaison de billes choisie par l'ordinateur.<br />Si
+        la bille est entourée en vert, elle est bien placée. Si sa bordure est
+        orange, elle est au mauvais endroit.
+      </p>
+    </header>
+
+    <div class="container gameboard my-2">
+      <form>
+        <div class="row">
+          <div class="col-12">
+            <select
+              class="col-1 mx-2 bille formulaire"
+              aria-label="Bille 0"
+              id="bille0"
+            >
+              <option value="0" class="color0" selected>blanc</option>
+              <option value="1" class="color1">noir</option>
+              <option value="2" class="color2">bleu</option>
+              <option value="3" class="color3">rouge</option>
+              <option value="4" class="color4">jaune</option>
+              <option value="5" class="color5">vert</option>
+            </select>
+            <select
+              class="col-1 mx-2 bille formulaire"
+              aria-label="Bille 1"
+              id="bille1"
+            >
+              <option value="0" class="color0" selected>blanc</option>
+              <option value="1" class="color1">noir</option>
+              <option value="2" class="color2">bleu</option>
+              <option value="3" class="color3">rouge</option>
+              <option value="4" class="color4">jaune</option>
+              <option value="5" class="color5">vert</option>
+            </select>
+            <select
+              class="col-1 mx-2 bille formulaire"
+              aria-label="Bille 2"
+              id="bille2"
+            >
+              <option value="0" class="color0" selected>blanc</option>
+              <option value="1" class="color1">noir</option>
+              <option value="2" class="color2">bleu</option>
+              <option value="3" class="color3">rouge</option>
+              <option value="4" class="color4">jaune</option>
+              <option value="5" class="color5">vert</option>
+            </select>
+            <select
+              class="col-1 mx-2 bille formulaire"
+              aria-label="Bille 3"
+              id="bille3"
+            >
+              <option value="0" class="color0" selected>blanc</option>
+              <option value="1" class="color1">noir</option>
+              <option value="2" class="color2">bleu</option>
+              <option value="3" class="color3">rouge</option>
+              <option value="4" class="color4">jaune</option>
+              <option value="5" class="color5">vert</option>
+            </select>
+          </div>
+        </div>
+        <div id="bouton">
+          <input
+            type="button"
+            value="Vérifier la combinaison"
+            class="btn btn-secondary my-3"
+            onclick="verifyColor()"
+          />
+        </div>
+        <p class="lead" id="message"></p>
+      </form>
+      <div id="gameboard"></div>
+    </div>
+  </body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</html>
